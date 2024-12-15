@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Confirmation</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Top Bar Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fleet.html">Our Fleet</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="careers.html">Careers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Confirmation Content -->
+    <main>
+        <h1>Application Submitted Successfully!</h1>
+        <p>Thank you, <span id="first-name-output"></span> <span id="last-name-output"></span>, for applying to the <span id="department-output"></span> department.</p>
+        <p>We have received your application and will review it shortly.</p>
+
+        <h2>Your Submitted Information:</h2>
+        <ul>
+            <li><strong>First Name:</strong> <span id="first-name"></span></li>
+            <li><strong>Last Name:</strong> <span id="last-name"></span></li>
+            <li><strong>Preferred Department:</strong> <span id="department"></span></li>
+        </ul>
+
+        <a href="index.html">Return to Home Page</a>
+    </main>
+
+    <script>
+        // Retrieve URL parameters to display submitted data
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('first-name').textContent = urlParams.get('first-name') || 'N/A';
+        document.getElementById('last-name').textContent = urlParams.get('last-name') || 'N/A';
+        document.getElementById('department').textContent = urlParams.get('department') || 'N/A';
+        document.getElementById('first-name-output').textContent = urlParams.get('first-name') || '';
+        document.getElementById('last-name-output').textContent = urlParams.get('last-name') || '';
+        document.getElementById('department-output').textContent = urlParams.get('department') || '';
+    </script>
+</body>
+</html>

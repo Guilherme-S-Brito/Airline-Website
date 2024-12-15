@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Top Bar Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fleet.html">Our Fleet</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="careers.html">Careers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Careers Content -->
+    <main>
+        <h1>Join Our Team</h1>
+        <p>We are always looking for passionate individuals to join our airline. Fill out the form below to submit your application.</p>
+
+        <form action="application_confirmation.html" method="GET">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required><br>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required><br>
+
+            <label for="department">Preferred Department:</label>
+            <select id="department" name="department" required>
+                <option value="Administrative">Administrative</option>
+                <option value="Crew">Crew</option>
+                <option value="Airports">Airports</option>
+            </select><br>
+
+            <label for="cv">Your CV:</label>
+            <textarea id="cv" name="cv" rows="5" placeholder="Paste your CV here..." required></textarea><br>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
