@@ -38,6 +38,39 @@ main {
     text-align: center;
 }
 
+
+/* Fleet Grid */
+
+.fleet-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.aircraft {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.aircraft img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.aircraft p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
 /* Destinations Grid */
 .destinations-container {
     display: grid;
@@ -67,6 +100,8 @@ main {
     padding: 10px;
     font-size: 14px;
 }
+
+
 
 /* Footer Links */
 a {
